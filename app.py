@@ -4,6 +4,14 @@ import numpy as np
 import pickle
 from sklearn.ensemble import RandomForestClassifier
 import xgboost as xgb
+from PIL import Image
+
+im = Image.open("penguin_icon.png")
+st.set_page_config(
+    page_title="Palmer Penguin Predictor",
+    page_icon=im,
+    layout="wide",
+)
 st.write("""
 # Penguin Prediction App
 
